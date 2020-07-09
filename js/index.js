@@ -60,11 +60,11 @@ makeElement[4].style.color = "green"
 makeElement[5].style.color = "green"
 
 
-const newElement = document.createElement("nav a") 
-newElement.textContent = 'Website'
+// const newElement = document.createElement("nav a") 
+// newElement.textContent = 'Website'
 
-const parentElement = document.querySelector('body')
-parentElement.appendChild(newElement)
+// const parentElement = document.querySelector('body')
+// parentElement.appendChild(newElement)
 
 
 
