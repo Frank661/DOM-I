@@ -66,21 +66,10 @@ makeElement[5].style.color = "green"
 // const parentElement = document.querySelector('body')
 // parentElement.appendChild(newElement)
 
-
-
-
-
-
-
-
-
-
-
-
 console.log('task 2')
 
 const h1Element = document.querySelector(".cta-text h1")
-h1Element.textContent = siteContent["cta"]["h1"]
+h1Element.innerHTML = "Dom <br>Is<br> Awesome"
 
 const button1 = document.querySelector(".cta button");
 button1.textContent = siteContent["cta"]["button"];
@@ -126,5 +115,22 @@ const footer1 = document.querySelector("footer")
 footer1.textContent = siteContent["footer"]["copyright"]
 
 
+
+
+
+
 // const h2Class = document.getElementsByClassName('card-title');
 // h2Class[2].style.color = 'red'; 
+
+
+
+
+const myElement = document.createElement("div");
+const myElement2 = document.createElement("p");
+myElement.textContent = 'Website made by me Frank';
+myElement.style.color = 'aqua';
+myElement2.textContent = "Frank was here";
+myElement2.color = "tomato";
+const stickItToTheMan = document.querySelector(".main-content");
+stickItToTheMan.prepend(myElement2);
+stickItToTheMan.appendChild(myElement);
